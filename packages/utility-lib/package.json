@@ -1,0 +1,18 @@
+{
+    "name": "@siri/utility-lib",
+    "version": "0.0.1",
+    "type": "module",
+    "main": "./dist/index.cjs",
+    "module": "./dist/index.js",
+    "types": "./dist/index.d.ts",
+    "scripts": {
+      "dev": "tsup index.ts --format esm,cjs --sourcemap inline",
+      "build": "tsup index.ts --format esm,cjs --sourcemap inline --dts",
+      "clean": "rm -rf .turbo && rm -rf node_modules && rm -rf dist"
+    },
+    "devDependencies": {
+     "tsup": "8.0.1",
+     "typescript": "5.3.3"
+    }
+  }
+  

@@ -1,0 +1,27 @@
+{
+  "name": "learning-hub",
+  "private": true,
+  "scripts": {
+    "build": "turbo build",
+    "dev": "turbo dev",
+    "lint": "turbo lint",
+    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
+    "clean": "turbo run clean && rm -rf .turbo",
+    "hard-clean-install-build": "turbo run clean && rm -rf dist && rm -rf node_modules && rm -rf package-lock.json && npm i --force && turbo run build",
+    "clean-install-build": "turbo run clean && rm -rf dist && rm -rf node_modules && npm i --force && turbo run build"
+  },
+  "devDependencies": {
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "prettier": "^3.1.1",
+    "turbo": "latest"
+  },
+  "engines": {
+    "node": ">=18"
+  },
+  "packageManager": "npm@10.2.4",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ]
+}
