@@ -1,12 +1,21 @@
 {
   "compilerOptions": {
+    // The version of JavaScript you're targeting. I recommend es2022 over esnext for stability.
     "target": "ES2020",
     "useDefineForClassFields": true,
+    // Tells TypeScript what built-in types to include. es2022 is the best option for stability. 
+    // dom and dom.iterable give you types for window, document etc.
     "lib": ["ES2020", "DOM", "DOM.Iterable"],
+    // ESNext is the best option because it most closely mimics how bundlers treat modules.
     "module": "ESNext",
+    // Skips checking the types of .d.ts files. This is important for performance, 
+    // because otherwise all node_modules will be checked.
     "skipLibCheck": true,
 
     /* Bundler mode */
+
+    /* Tells TypeScript how to resolve modules. 
+    NodeNext is the best option for if the code you're writing is meant to be run in Node. */
     "moduleResolution": "node",
     "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
