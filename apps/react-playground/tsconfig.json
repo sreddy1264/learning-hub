@@ -17,7 +17,6 @@
     /* Tells TypeScript how to resolve modules. 
     NodeNext is the best option for if the code you're writing is meant to be run in Node. */
     "moduleResolution": "node",
-    "allowImportingTsExtensions": true,
     "resolveJsonModule": true,
     "isolatedModules": true,
     "noEmit": true,
