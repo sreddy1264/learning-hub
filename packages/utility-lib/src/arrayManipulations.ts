@@ -51,16 +51,16 @@ function isPrimaryNumber (num: number) {
 };
 
 // return Fibonacci sequence up to a given number of term
-function fibonacciSequence(numTerm: number) {
-    if (numTerm <= 0) return [];
-    if (numTerm === 1) return [0];
-    let sequence = [0,1];
-    while(sequence.length < numTerm) {
-      let nextNumber = sequence[sequence.length - 1] + sequence[sequence.length - 2];
-      sequence.push(nextNumber);
-    }
-    return sequence;
-};
+// function fibonacciSequence(numTerm: number) {
+//     if (numTerm <= 0) return [];
+//     if (numTerm === 1) return [0];
+//     let sequence = [0,1];
+//     while(sequence.length < numTerm) {
+//       let nextNumber = sequence[sequence.length - 1] + sequence[sequence.length - 2];
+//       sequence.push(nextNumber);
+//     }
+//     return sequence;
+// };
 
 
 
