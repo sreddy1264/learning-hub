@@ -5,6 +5,7 @@ import { Login } from './features/login/Login';
 import { Home } from './features/home/Home';
 import { About } from './features/about/About';
 // import { sum } from '@siri/utility-lib';
+// import { CounterConnected } from "./features/counter/Counter";
 
 export function App() {
   const [submit, setSubmit] = useState(false);
@@ -21,6 +22,7 @@ export function App() {
        <Route path="/About" element={<About />} />
       </Routes>
       </>}
-      </>
-  )
+      {/* <CounterConnected /> */}
+    </>
+  );
 };

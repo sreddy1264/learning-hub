@@ -9,7 +9,7 @@
       "incremental": false,
       "isolatedModules": true,
       "lib": ["es2022", "DOM", "DOM.Iterable"],
-      "moduleDetection": "force",
+      // "moduleDetection": "force",
       "module": "ESNext",
       "moduleResolution": "Node",
       "noUncheckedIndexedAccess": true,

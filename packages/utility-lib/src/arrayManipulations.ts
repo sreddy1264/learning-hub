@@ -35,12 +35,16 @@ function MaxNumber (numList: Array<number>) {
 
 // Factorial of a given number
 function factorial (num: number): number {
+// If the number is less than 0, reject it.
+  if (num < 0) 
+  return -1;
     if (num === 0 || num === 1) {
         return 1;
     } else {
         return num * factorial(num - 1);
     }
 };
+
 // Check if a given number is a prime number
 function isPrimaryNumber (num: number) {
   if (num <= 1) return false;
@@ -62,7 +66,13 @@ function isPrimaryNumber (num: number) {
 //     return sequence;
 // };
 
+// reduce method syntax is reduce((total, currentValue, currentIndex, arr) => {}, initial value)
 
+// How can you double elements of an array using reduce? Please note that you cannot create additional variables.
+
+//   const doubleElements = (arr: Array<number>) => {
+//      return arr.reduce((acc, item) => item * 2, 0);
+//   }
 
 export {
     SumOfNumber,

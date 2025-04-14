@@ -7,4 +7,6 @@ declare function MaxNumber(numList: Array<number>): number;
 declare function factorial(num: number): number;
 declare function isPrimaryNumber(num: number): boolean;
 
-export { MaxNumber, SumOfNumber, factorial, getEvenNumbers, isEvenNumber, isPolindrome, isPrimaryNumber, reverseString };
+declare const reverseEachWord: (sentence: string) => string;
+
+export { MaxNumber, SumOfNumber, factorial, getEvenNumbers, isEvenNumber, isPolindrome, isPrimaryNumber, reverseEachWord, reverseString };
